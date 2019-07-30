@@ -23,7 +23,7 @@ namespace MS.API
         {
             services.AddMvc();
 
-            var autoMapperConfig = new AutoMapper.MapperConfiguration(cfg =>
+            var autoMapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new MapperProfile());
             });
