@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "75ac8a61991121c34f619e26e655858feae5ae9c"
+    "signature": "8cf555289f4423263b2b035dcee92313843365fe"
   },
   "compilationOptions": {
     "defines": [
@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v2.2": {
       "MS.API/1.0.0": {
         "dependencies": {
-          "Castle.Facilities.AspNetCore": "5.0.0",
           "MS.Application": "1.0.0",
           "MS.Helper": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
@@ -91,24 +90,6 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
-      "Castle.Facilities.AspNetCore/5.0.0": {
-        "dependencies": {
-          "Castle.Windsor": "5.0.0",
-          "Microsoft.AspNetCore": "2.2.0",
-          "Microsoft.AspNetCore.Mvc": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Razor": "2.2.0",
-          "Microsoft.Extensions.Logging": "2.2.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Castle.Facilities.AspNetCore.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard2.0/Castle.Facilities.AspNetCore.dll": {}
-        }
-      },
       "Castle.Windsor/5.0.0": {
         "dependencies": {
           "Castle.Core": "4.4.0",
@@ -126,6 +107,23 @@
         },
         "compile": {
           "lib/netstandard1.6/Castle.Windsor.dll": {}
+        }
+      },
+      "Castle.Windsor.MsDependencyInjection/3.3.1": {
+        "dependencies": {
+          "Castle.Core": "4.4.0",
+          "Castle.Windsor": "5.0.0",
+          "Microsoft.Extensions.DependencyInjection": "2.2.0",
+          "Microsoft.Extensions.Options": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Castle.Windsor.MsDependencyInjection.dll": {
+            "assemblyVersion": "3.3.1.0",
+            "fileVersion": "3.3.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Castle.Windsor.MsDependencyInjection.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore/2.2.6": {
@@ -428,8 +426,6 @@
       },
       "MS.Application/1.0.0": {
         "dependencies": {
-          "Castle.Core": "4.4.0",
-          "Castle.Windsor": "5.0.0",
           "MS.Core": "1.0.0"
         },
         "runtime": {
@@ -441,6 +437,9 @@
       },
       "MS.Core/1.0.0": {
         "dependencies": {
+          "Castle.Core": "4.4.0",
+          "Castle.Windsor": "5.0.0",
+          "Castle.Windsor.MsDependencyInjection": "3.3.1",
           "MS.Data": "1.0.0",
           "MS.Helper": "1.0.0"
         },
@@ -3577,19 +3576,19 @@
       "path": "castle.core/4.4.0",
       "hashPath": "castle.core.4.4.0.nupkg.sha512"
     },
-    "Castle.Facilities.AspNetCore/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3ySvomE2QOLKHwewBdIXcab7cV6uaxGUtdgA3tZ61nUAqVKyXf6aSz6koCVZ/Mhi7dNZebM17MNNpAtw7SCmAA==",
-      "path": "castle.facilities.aspnetcore/5.0.0",
-      "hashPath": "castle.facilities.aspnetcore.5.0.0.nupkg.sha512"
-    },
     "Castle.Windsor/5.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-kfaIV95ZnYQj6gjq1G9o81gBuxo4o2/yCwgaylIeytcK3jtKJe4RGN6KxSV6viwvKKn+XQvblrBHk1qQyD/YtQ==",
       "path": "castle.windsor/5.0.0",
       "hashPath": "castle.windsor.5.0.0.nupkg.sha512"
+    },
+    "Castle.Windsor.MsDependencyInjection/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AK5ClaDRtP6YxSdCZTngnfMYstRkglxKrYrfWdq6H9QPQguB5Fdq300euqsNMd3CO4qn6tp2Ln4AdrQdmEkL0w==",
+      "path": "castle.windsor.msdependencyinjection/3.3.1",
+      "hashPath": "castle.windsor.msdependencyinjection.3.3.1.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.2.6": {
       "type": "package",

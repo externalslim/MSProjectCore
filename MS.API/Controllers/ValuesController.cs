@@ -9,6 +9,7 @@ using MS.Application.Services.TypesService;
 using MS.Core.UoW;
 using MS.Data.Models;
 using MS.Helper.Dtos.Instants;
+using MS.Helper.Dtos.Types;
 
 namespace MS.API.Controllers
 {
@@ -26,12 +27,11 @@ namespace MS.API.Controllers
         
         // GET api/values
         [HttpGet]
-        [UnitOfWork]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<TypesOutput> Get()
         {
             var types = _typesService.GetAllTypes();
-
-            return new string[] { "value1", "value2" };
+            //return Newtonsoft.Json.JsonConvert.DeserializeObject(types);
+            return types;
         }
 
         // GET api/values/5

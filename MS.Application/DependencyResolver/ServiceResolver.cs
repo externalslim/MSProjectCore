@@ -1,12 +1,17 @@
-﻿using Castle.MicroKernel.Registration;
+﻿using AutoMapper;
+using Castle.Core;
+using Castle.MicroKernel;
+using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using Castle.Windsor.MsDependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
+using MS.Application.DependencyManager;
+using MS.Core.RepositoryBase.DependencyManager;
+using MS.Core.UoW;
+using MS.Core.UoWInterceptor;
+using MS.Helper.Mapping;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace MS.Application.DependencyResolver
 {
@@ -17,11 +22,17 @@ namespace MS.Application.DependencyResolver
         public ServiceResolver(IServiceCollection services)
         {
             _container = new WindsorContainer();
-            _container.Kernel.ComponentModelBuilder.AddContributor(new ContributeConstruct());
             
-            _container.Register();
-            //Register your components in container
-            //then
+            _container.Kernel.ComponentRegistered += Kernel_ComponentRegistered;
+
+            Assembly assemblyServices = typeof(IServiceDependency).Assembly;
+            Assembly assemblyRepository = typeof(IRepositoryDependency).Assembly;
+            _container.Register(
+                  Component.For<UoWInterceptor>().LifeStyle.Transient
+                , Classes.FromAssembly(assemblyServices).BasedOn(typeof(IServiceDependency)).WithService.AllInterfaces()
+                , Classes.FromAssembly(assemblyRepository).BasedOn(typeof(IRepositoryDependency)).WithService.AllInterfaces()
+                );
+
             _serviceProvider = WindsorRegistrationHelper.CreateServiceProvider(_container, services);
         }
 
@@ -30,11 +41,23 @@ namespace MS.Application.DependencyResolver
             return _serviceProvider;
         }
 
-        Assembly GetAssemblyByName(string name)
+        void Kernel_ComponentRegistered(string key, IHandler handler)
         {
-            return AppDomain.CurrentDomain.GetAssemblies().
-                   SingleOrDefault(assembly => assembly.GetName().Name == name);
+            if (UnitOfWorkHelper.IsRepositoryClass(handler.ComponentModel.Implementation))
+            {
+                handler.ComponentModel.Interceptors.Add(new InterceptorReference(typeof(UoWInterceptor)));
+            }
+
+            foreach (var method in handler.ComponentModel.Implementation.GetMethods())
+            {
+                if (UnitOfWorkHelper.HasUnitOfWorkAttribute(method))
+                {
+                    handler.ComponentModel.Interceptors.Add(new InterceptorReference(typeof(UoWInterceptor)));
+                    return;
+                }
+            }
         }
+
 
     }
 }

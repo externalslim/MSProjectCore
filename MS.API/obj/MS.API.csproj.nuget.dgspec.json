@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MSProject\\MS\\MS.API\\MS.API.csproj": {}
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.API\\MS.API.csproj": {}
   },
   "projects": {
-    "D:\\MSProject\\MS\\MS.API\\MS.API.csproj": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.API\\MS.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MSProject\\MS\\MS.API\\MS.API.csproj",
+        "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.API\\MS.API.csproj",
         "projectName": "MS.API",
-        "projectPath": "D:\\MSProject\\MS\\MS.API\\MS.API.csproj",
+        "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.API\\MS.API.csproj",
         "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-        "outputPath": "D:\\MSProject\\MS\\MS.API\\obj\\",
+        "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\MSProject\\MS\\MS.Application\\MS.Application.csproj": {
-                "projectPath": "D:\\MSProject\\MS\\MS.Application\\MS.Application.csproj"
+              "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\MS.Application.csproj": {
+                "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\MS.Application.csproj"
               },
-              "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj": {
-                "projectPath": "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj"
+              "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj": {
+                "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "D:\\MSProject\\MS\\MS.Application\\MS.Application.csproj": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\MS.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MSProject\\MS\\MS.Application\\MS.Application.csproj",
+        "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\MS.Application.csproj",
         "projectName": "MS.Application",
-        "projectPath": "D:\\MSProject\\MS\\MS.Application\\MS.Application.csproj",
+        "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\MS.Application.csproj",
         "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-        "outputPath": "D:\\MSProject\\MS\\MS.Application\\obj\\",
+        "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -100,8 +100,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\MSProject\\MS\\MS.Core\\MS.Core.csproj": {
-                "projectPath": "D:\\MSProject\\MS\\MS.Core\\MS.Core.csproj"
+              "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\MS.Core.csproj": {
+                "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\MS.Core.csproj"
               }
             }
           }
@@ -130,14 +130,14 @@
         }
       }
     },
-    "D:\\MSProject\\MS\\MS.Core\\MS.Core.csproj": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\MS.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MSProject\\MS\\MS.Core\\MS.Core.csproj",
+        "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\MS.Core.csproj",
         "projectName": "MS.Core",
-        "projectPath": "D:\\MSProject\\MS\\MS.Core\\MS.Core.csproj",
+        "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\MS.Core.csproj",
         "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-        "outputPath": "D:\\MSProject\\MS\\MS.Core\\obj\\",
+        "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -156,11 +156,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj": {
-                "projectPath": "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj"
+              "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {
+                "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj"
               },
-              "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj": {
-                "projectPath": "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj"
+              "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj": {
+                "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj"
               }
             }
           }
@@ -201,14 +201,14 @@
         }
       }
     },
-    "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj",
+        "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
         "projectName": "MS.Data",
-        "projectPath": "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj",
+        "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
         "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-        "outputPath": "D:\\MSProject\\MS\\MS.Data\\obj\\",
+        "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -271,14 +271,14 @@
         }
       }
     },
-    "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj",
+        "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
         "projectName": "MS.Helper",
-        "projectPath": "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj",
+        "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
         "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-        "outputPath": "D:\\MSProject\\MS\\MS.Helper\\obj\\",
+        "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -297,8 +297,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj": {
-                "projectPath": "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj"
+              "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {
+                "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj"
               }
             }
           }

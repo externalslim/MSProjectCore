@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj": {}
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {}
   },
   "projects": {
-    "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj",
+        "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
         "projectName": "MS.Data",
-        "projectPath": "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj",
+        "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
         "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-        "outputPath": "D:\\MSProject\\MS\\MS.Data\\obj\\",
+        "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

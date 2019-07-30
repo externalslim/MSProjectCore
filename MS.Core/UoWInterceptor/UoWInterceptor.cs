@@ -6,7 +6,7 @@ using MS.Core.UoW;
 
 namespace MS.Core.UoWInterceptor
 {
-    public class UowInterceptor : IUowInterceptor
+    public class UoWInterceptor : IUoWInterceptor
     {
         public void Intercept(IInvocation invocation)
         {

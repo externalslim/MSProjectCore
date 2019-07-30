@@ -18,7 +18,7 @@ namespace MS.Core.RepositoryBase
         /// Global Get All Method
         /// </summary>
         /// <returns></returns>
-        IEnumerable<TEntity> GetAll();
+        List<TEntity> GetAll();
 
         /// <summary>
         /// Global Get With Filter Method. Expression is optional

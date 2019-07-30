@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using MS.Core.RepositoryBase.Contract;
+using MS.Core.UoW;
 using MS.Helper.Dtos.Types;
 
 namespace MS.Application.Services.TypesService
@@ -13,6 +14,8 @@ namespace MS.Application.Services.TypesService
         {
             _typesRepository = typesRepository;
         }
+
+        [UnitOfWork]
         public TypesOutput GetAllTypes()
         {
             var output = new TypesOutput();

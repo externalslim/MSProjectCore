@@ -62,7 +62,7 @@ namespace MS.Core.RepositoryBase
         #endregion
 
         #region Read
-        public IEnumerable<TEntity> GetAll()
+        public List<TEntity> GetAll()
         {
             return DbSet.ToList();
         }

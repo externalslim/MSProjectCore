@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MS.Application.DependencyResolver;
+using MS.Helper.Mapping;
+using System;
 
 namespace MS.API
 {
@@ -17,13 +19,20 @@ namespace MS.API
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            // Add other framework services
+            services.AddMvc();
 
-            // Add custom provider
+            var autoMapperConfig = new AutoMapper.MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new MapperProfile());
+            });
+
+            var mapper = autoMapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             var container = new ServiceResolver(services).GetServiceProvider();
+            return container;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

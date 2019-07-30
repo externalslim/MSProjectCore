@@ -5675,11 +5675,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MSProject\\MS\\MS.Application\\MS.Application.csproj",
+      "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\MS.Application.csproj",
       "projectName": "MS.Application",
-      "projectPath": "D:\\MSProject\\MS\\MS.Application\\MS.Application.csproj",
+      "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\MS.Application.csproj",
       "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-      "outputPath": "D:\\MSProject\\MS\\MS.Application\\obj\\",
+      "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5698,8 +5698,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\MSProject\\MS\\MS.Core\\MS.Core.csproj": {
-              "projectPath": "D:\\MSProject\\MS\\MS.Core\\MS.Core.csproj"
+            "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\MS.Core.csproj": {
+              "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Core\\MS.Core.csproj"
             }
           }
         }

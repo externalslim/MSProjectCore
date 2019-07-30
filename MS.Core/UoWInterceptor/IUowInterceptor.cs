@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MS.Core.UoWInterceptor
 {
-    public interface IUowInterceptor : IInterceptor
+    public interface IUoWInterceptor : IInterceptor
     {
     }
 }

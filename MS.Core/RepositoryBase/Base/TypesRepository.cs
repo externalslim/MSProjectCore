@@ -11,7 +11,7 @@ namespace MS.Core.RepositoryBase.Base
 {
     public class TypesRepository : Repository<Types>, ITypesRepository
     {
-        private IMapper _mapper;
+        private readonly IMapper _mapper;
         public TypesRepository(IMapper mapper)
         {
             _mapper = mapper;
@@ -36,10 +36,10 @@ namespace MS.Core.RepositoryBase.Base
         public TypesOutput GetAllTypes()
         {
             var output = new TypesOutput();
-            var types = GetAll().OrderByDescending(x => x.Id);
+            var types = GetAll().OrderByDescending(x => x.Id).ToList();
             if (types != null)
             {
-                output.TypesListModel = Mapper.Map<List<TypesDto>>(types);
+                output.TypesListModel = _mapper.Map<List<TypesDto>>(types);
             }
             return output;
         }

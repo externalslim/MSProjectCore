@@ -3702,11 +3702,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj",
+      "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
       "projectName": "MS.Helper",
-      "projectPath": "D:\\MSProject\\MS\\MS.Helper\\MS.Helper.csproj",
+      "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
       "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-      "outputPath": "D:\\MSProject\\MS\\MS.Helper\\obj\\",
+      "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3725,8 +3725,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj": {
-              "projectPath": "D:\\MSProject\\MS\\MS.Data\\MS.Data.csproj"
+            "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {
+              "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj"
             }
           }
         }

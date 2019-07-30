@@ -1,12 +1,10 @@
 ﻿using Castle.Core;
 using Castle.MicroKernel;
 using Castle.MicroKernel.ModelBuilder;
-using MS.Core.RepositoryBase;
+using MS.Application.DependencyManager;
+using MS.Core.RepositoryBase.DependencyManager;
 using MS.Core.UoWInterceptor;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace MS.Application.DependencyResolver
 {
@@ -14,9 +12,9 @@ namespace MS.Application.DependencyResolver
     {
         public void ProcessModel(IKernel kernel, ComponentModel model)
         {
-            if (model.Services.Any(s => s == typeof(IRepository)))
+            if (model.Services.Any(s => s == typeof(IServiceDependency)))
             {
-                model.Interceptors.Add(InterceptorReference.ForType<UowInterceptor>());
+                model.Interceptors.Add(InterceptorReference.ForType<UoWInterceptor>());
             }
         }
     }
