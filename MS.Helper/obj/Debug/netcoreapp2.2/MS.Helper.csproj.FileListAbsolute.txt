@@ -1,0 +1,12 @@
+D:\MSProject\MS\MS.Helper\bin\Debug\netcoreapp2.2\MS.Helper.deps.json
+D:\MSProject\MS\MS.Helper\bin\Debug\netcoreapp2.2\MS.Helper.dll
+D:\MSProject\MS\MS.Helper\obj\Debug\netcoreapp2.2\MS.Helper.csproj.CoreCompileInputs.cache
+D:\MSProject\MS\MS.Helper\obj\Debug\netcoreapp2.2\MS.Helper.AssemblyInfoInputs.cache
+D:\MSProject\MS\MS.Helper\obj\Debug\netcoreapp2.2\MS.Helper.AssemblyInfo.cs
+D:\MSProject\MS\MS.Helper\obj\Debug\netcoreapp2.2\MS.Helper.csprojAssemblyReference.cache
+D:\MSProject\MS\MS.Helper\bin\Debug\netcoreapp2.2\MS.Helper.pdb
+D:\MSProject\MS\MS.Helper\bin\Debug\netcoreapp2.2\MS.Data.dll
+D:\MSProject\MS\MS.Helper\bin\Debug\netcoreapp2.2\MS.Data.pdb
+D:\MSProject\MS\MS.Helper\obj\Debug\netcoreapp2.2\MS.Helper.csproj.CopyComplete
+D:\MSProject\MS\MS.Helper\obj\Debug\netcoreapp2.2\MS.Helper.dll
+D:\MSProject\MS\MS.Helper\obj\Debug\netcoreapp2.2\MS.Helper.pdb

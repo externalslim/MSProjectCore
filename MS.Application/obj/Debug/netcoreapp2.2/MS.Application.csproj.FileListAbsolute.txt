@@ -1,0 +1,16 @@
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Application.deps.json
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Application.dll
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Application.pdb
+D:\MSProject\MS\MS.Application\obj\Debug\netcoreapp2.2\MS.Application.csprojAssemblyReference.cache
+D:\MSProject\MS\MS.Application\obj\Debug\netcoreapp2.2\MS.Application.csproj.CoreCompileInputs.cache
+D:\MSProject\MS\MS.Application\obj\Debug\netcoreapp2.2\MS.Application.AssemblyInfoInputs.cache
+D:\MSProject\MS\MS.Application\obj\Debug\netcoreapp2.2\MS.Application.AssemblyInfo.cs
+D:\MSProject\MS\MS.Application\obj\Debug\netcoreapp2.2\MS.Application.dll
+D:\MSProject\MS\MS.Application\obj\Debug\netcoreapp2.2\MS.Application.pdb
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Core.dll
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Data.dll
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Core.pdb
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Data.pdb
+D:\MSProject\MS\MS.Application\obj\Debug\netcoreapp2.2\MS.Application.csproj.CopyComplete
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Helper.dll
+D:\MSProject\MS\MS.Application\bin\Debug\netcoreapp2.2\MS.Helper.pdb

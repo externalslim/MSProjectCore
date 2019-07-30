@@ -1,0 +1,11 @@
+D:\MSProject\MS\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.deps.json
+D:\MSProject\MS\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.dll
+D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.csprojAssemblyReference.cache
+D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.csproj.CoreCompileInputs.cache
+D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.AssemblyInfoInputs.cache
+D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.AssemblyInfo.cs
+D:\MSProject\MS\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.pdb
+D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.dll
+D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.pdb
+D:\MSProject\MS\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.json
+D:\MSProject\MS\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.dev.json
