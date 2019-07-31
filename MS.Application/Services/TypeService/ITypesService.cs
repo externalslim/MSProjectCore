@@ -5,10 +5,12 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MS.Application.Services.TypesService
+namespace MS.Application.Services.TypeService
 {
     public interface ITypesService : IServiceDependency
     {
         TypesOutput GetAllTypes();
+        TypesOutput GetActiveTypes();
+        TypesOutput GetTypeById(TypesInput input);
     }
 }

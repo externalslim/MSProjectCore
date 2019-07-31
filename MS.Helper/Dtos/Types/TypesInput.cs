@@ -7,7 +7,7 @@ namespace MS.Helper.Dtos.Types
 {
     public class TypesInput : BaseInput
     {
-        public int? EnumId { get; set; }
+        public int EnumId { get; set; }
         public string Name { get; set; }
     }
 }

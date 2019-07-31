@@ -10,10 +10,7 @@ namespace MS.Core.RepositoryBase.Contract
     public interface ITypesRepository : IRepository<Types>, IRepositoryDependency
     {
         TypesOutput GetAllTypes();
-        TypesOutput GetActiveTypesList();
-        TypesOutput GetTypesById(TypesInput input);
-        TypesOutput Create(TypesInput input);
-        void Update(TypesInput input);
-        void Delete(TypesInput input);
+        TypesOutput GetActiveTypes();
+        TypesOutput GetTypeById(TypesInput input);
     }
 }

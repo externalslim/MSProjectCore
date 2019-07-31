@@ -54,7 +54,7 @@ namespace MS.Core.RepositoryBase
         /// Global Delete Method
         /// </summary>
         /// <param name="entity">input model</param>
-        void Delete(TEntity entity);
+        bool Delete(TEntity entity);
         #endregion
     }
 }

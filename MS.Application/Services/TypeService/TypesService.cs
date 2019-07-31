@@ -5,7 +5,7 @@ using MS.Core.RepositoryBase.Contract;
 using MS.Core.UoW;
 using MS.Helper.Dtos.Types;
 
-namespace MS.Application.Services.TypesService
+namespace MS.Application.Services.TypeService
 {
     public class TypesService : ITypesService
     {
@@ -15,11 +15,25 @@ namespace MS.Application.Services.TypesService
             _typesRepository = typesRepository;
         }
 
-        [UnitOfWork]
+        public TypesOutput GetActiveTypes()
+        {
+            var output = new TypesOutput();
+            output = _typesRepository.GetActiveTypes();
+            return output;
+        }
+
+        //[UnitOfWork]
         public TypesOutput GetAllTypes()
         {
             var output = new TypesOutput();
             output = _typesRepository.GetAllTypes();
+            return output;
+        }
+
+        public TypesOutput GetTypeById(TypesInput input)
+        {
+            var output = new TypesOutput();
+            output = _typesRepository.GetTypeById(input);
             return output;
         }
     }

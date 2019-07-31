@@ -27,7 +27,7 @@ namespace MS.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-QN2M7CR\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");  //DESKTOP-QN2M7CR\\SQLEXPRESS
             }
         }
 

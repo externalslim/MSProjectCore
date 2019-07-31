@@ -27,11 +27,17 @@ namespace MS.Application.DependencyResolver
 
             Assembly assemblyServices = typeof(IServiceDependency).Assembly;
             Assembly assemblyRepository = typeof(IRepositoryDependency).Assembly;
+
+            _container.Register(Component.For<UoWInterceptor>());
             _container.Register(
-                  Component.For<UoWInterceptor>().LifeStyle.Transient
-                , Classes.FromAssembly(assemblyServices).BasedOn(typeof(IServiceDependency)).WithService.AllInterfaces()
+                //Component.For<UoWInterceptor>().LifeStyle.Transient, 
+                Classes.FromAssembly(assemblyServices).BasedOn(typeof(IServiceDependency)).WithService.AllInterfaces()
+                .Configure(r => r.Interceptors<UoWInterceptor>())
+
                 , Classes.FromAssembly(assemblyRepository).BasedOn(typeof(IRepositoryDependency)).WithService.AllInterfaces()
                 );
+
+
 
             _serviceProvider = WindsorRegistrationHelper.CreateServiceProvider(_container, services);
         }

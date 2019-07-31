@@ -10,11 +10,13 @@ namespace MS.Core.UoWInterceptor
     {
         public void Intercept(IInvocation invocation)
         {
+
             if (UnitOfWork.Current != null || !RequiresDbConnection(invocation.MethodInvocationTarget))
             {
                 invocation.Proceed();
                 return;
             }
+
 
             try
             {
@@ -53,8 +55,13 @@ namespace MS.Core.UoWInterceptor
             {
                 return true;
             }
+
+            if (UnitOfWorkHelper.IsRepositoryMethod(methodInfo))
+            {
+                return true;
+            }
+
             return false;
         }
-
     }
 }

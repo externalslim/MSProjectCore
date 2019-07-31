@@ -8,6 +8,11 @@ namespace MS.Core.UoW
 {
     public class UnitOfWorkHelper
     {
+        public static bool IsRepositoryMethod(MethodInfo methodInfo)
+        {
+            return IsRepositoryClass(methodInfo.DeclaringType);
+        }
+
         public static bool HasUnitOfWorkAttribute(MethodInfo methodInfo)
         {
             return methodInfo.IsDefined(typeof(UnitOfWorkAttribute), true);

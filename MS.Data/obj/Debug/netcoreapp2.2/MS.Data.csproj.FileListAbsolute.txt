@@ -9,3 +9,14 @@ D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.dll
 D:\MSProject\MS\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.pdb
 D:\MSProject\MS\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.json
 D:\MSProject\MS\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.dev.json
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.deps.json
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.json
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.dev.json
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.dll
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.pdb
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.csprojAssemblyReference.cache
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.csproj.CoreCompileInputs.cache
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.AssemblyInfoInputs.cache
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.AssemblyInfo.cs
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.dll
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.pdb

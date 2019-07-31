@@ -17,41 +17,37 @@ namespace MS.Core.RepositoryBase.Base
             _mapper = mapper;
         }
 
-        public TypesOutput Create(TypesInput input)
+        public TypesOutput GetActiveTypes()
         {
             var output = new TypesOutput();
+            var typeList = GetAllWithFilter(x => !x.IsDeleted);
+            if (typeList.Count > 0)
+            {
+                output.TypesListModel = _mapper.Map<List<TypesDto>>(typeList);
+            }
             return output;
-        }
-
-        public void Delete(TypesInput input)
-        {
-            throw new NotImplementedException();
-        }
-
-        public TypesOutput GetActiveTypesList()
-        {
-            throw new NotImplementedException();
         }
 
         public TypesOutput GetAllTypes()
         {
             var output = new TypesOutput();
-            var types = GetAll().OrderByDescending(x => x.Id).ToList();
-            if (types != null)
+            var typeList = GetAll();
+            if (typeList.Count > 0)
             {
-                output.TypesListModel = _mapper.Map<List<TypesDto>>(types);
+                output.TypesListModel = _mapper.Map<List<TypesDto>>(typeList);
             }
             return output;
         }
 
-        public TypesOutput GetTypesById(TypesInput input)
+        public TypesOutput GetTypeById(TypesInput input)
         {
-            throw new NotImplementedException();
-        }
-
-        public void Update(TypesInput input)
-        {
-            throw new NotImplementedException();
+            var output = new TypesOutput();
+            var type = GetWithFilter(x => x.Id == input.Id);
+            if (type != null)
+            {
+                output.TypesModel = _mapper.Map<TypesDto>(type);
+            }
+            return output;
         }
     }
 }

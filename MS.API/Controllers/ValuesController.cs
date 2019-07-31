@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using MS.Application.DependencyResolver;
-using MS.Application.Services.TypesService;
+using MS.Application.Services.TypeService;
 using MS.Core.UoW;
 using MS.Data.Models;
 using MS.Helper.Dtos.Instants;

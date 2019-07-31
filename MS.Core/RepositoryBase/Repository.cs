@@ -38,6 +38,7 @@ namespace MS.Core.RepositoryBase
             {
                 DbSet.Attach(entity);
                 Context.Entry(entity).State = EntityState.Modified;
+
             }
             catch (Exception ex)
             {
@@ -45,7 +46,7 @@ namespace MS.Core.RepositoryBase
             }
         }
 
-        public void Delete(TEntity entity)
+        public bool Delete(TEntity entity)
         {
 
             try
@@ -53,9 +54,11 @@ namespace MS.Core.RepositoryBase
                 TEntity _entity = entity;
                 _entity.GetType().GetProperty("IsDeleted").SetValue(_entity, true);
                 this.Update(_entity);
+                return true;
             }
             catch (Exception ex)
             {
+                return false;
                 throw new Exception(ex.Message);
             }
         }
