@@ -24,8 +24,9 @@ namespace MS.Core.RepositoryBase
         {
             try
             {
-                return DbSet.Add(entity).Entity;
-
+                var entitySet = DbSet.Add(entity).Entity;
+                Context.SaveChanges();
+                return entitySet;
             }
             catch (Exception ex)
             {
@@ -38,7 +39,7 @@ namespace MS.Core.RepositoryBase
             {
                 DbSet.Attach(entity);
                 Context.Entry(entity).State = EntityState.Modified;
-
+                Context.SaveChanges();
             }
             catch (Exception ex)
             {

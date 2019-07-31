@@ -11,10 +11,11 @@ namespace MS.Application.Services.TemplateService
         TemplatesOutput GetAllTemplates();
         TemplatesOutput GetAllActiveTemplates();
         TemplatesOutput GetTemplateById(TemplatesInput input);
-
         TemplatesOutput GetAllTemplatesWithTypes();
         TemplatesOutput GetAllActiveTemplatesWithTypes();
         TemplatesOutput GetTemplateWithTypeByTemplateId(TemplatesInput input);
+        TemplatesOutput GetAllTemplatesByTypeId(TemplatesInput input);
+        TemplatesOutput GetAllActiveTemplatesByTypeId(TemplatesInput input);
 
         TemplatesOutput CreateTemplate(TemplatesInput input);
         TemplatesOutput UpdateTemplate(TemplatesInput input);

@@ -58,6 +58,28 @@ namespace MS.Core.RepositoryBase.Base
             return output;
         }
 
+        public TemplatesOutput GetAllTemplatesByTypeId(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            var templates = GetAllWithFilter(x => x.TypeId == input.TypeId);
+            if (templates.Count > 0)
+            {
+                output.TemplatesListModel = _mapper.Map<List<TemplatesDto>>(templates);
+            }
+            return output;
+        }
+
+
+        public TemplatesOutput GetAllActiveTemplatesByTypeId(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            var templates = GetAllWithFilter(x => x.TypeId == input.TypeId && !x.IsDeleted);
+            if (templates.Count > 0)
+            {
+                output.TemplatesListModel = _mapper.Map<List<TemplatesDto>>(templates);
+            }
+            return output;
+        }
         #endregion
 
         #region Create, Update, Delete
@@ -87,6 +109,7 @@ namespace MS.Core.RepositoryBase.Base
         {
             return Delete(_mapper.Map<Templates>(input));
         }
+
         #endregion
 
     }

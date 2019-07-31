@@ -2,7 +2,7 @@
 
 USE [MS]
 GO
-/****** Object:  Table [dbo].[Instants]    Script Date: 30.07.2019 23:50:53 ******/
+/****** Object:  Table [dbo].[Instants]    Script Date: 1.08.2019 00:06:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -23,7 +23,32 @@ CREATE TABLE [dbo].[Instants](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[LogStashes]    Script Date: 30.07.2019 23:50:54 ******/
+/****** Object:  Table [dbo].[Jobs]    Script Date: 1.08.2019 00:06:19 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Jobs](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[TemplateId] [int] NULL,
+	[QueryId] [int] NULL,
+	[TypeId] [int] NULL,
+	[StartDate] [datetime] NULL,
+	[EndDate] [datetime] NULL,
+	[Every] [int] NULL,
+	[WhenSet] [int] NULL,
+	[IsDeleted] [bit] NOT NULL,
+	[CreatedBy] [int] NULL,
+	[CreatedDate] [datetime] NULL,
+	[UpdatedBy] [int] NULL,
+	[UpdatedDate] [datetime] NULL,
+ CONSTRAINT [PK_TemplateQuery] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[LogStashes]    Script Date: 1.08.2019 00:06:19 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -41,7 +66,7 @@ CREATE TABLE [dbo].[LogStashes](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Queries]    Script Date: 30.07.2019 23:50:54 ******/
+/****** Object:  Table [dbo].[Queries]    Script Date: 1.08.2019 00:06:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -63,53 +88,7 @@ CREATE TABLE [dbo].[Queries](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Schedules]    Script Date: 30.07.2019 23:50:54 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[Schedules](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[Name] [nvarchar](50) NULL,
-	[Description] [nvarchar](250) NULL,
-	[Period] [int] NULL,
-	[TimeType] [int] NULL,
-	[StartDate] [datetime] NULL,
-	[EndDate] [datetime] NULL,
-	[IsDeleted] [bit] NOT NULL,
-	[CreatedBy] [int] NULL,
-	[CreatedDate] [datetime] NULL,
-	[UpdatedBy] [int] NULL,
-	[UpdatedDate] [datetime] NULL,
- CONSTRAINT [PK_Schedule] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-/****** Object:  Table [dbo].[TemplateQueries]    Script Date: 30.07.2019 23:50:54 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
-CREATE TABLE [dbo].[TemplateQueries](
-	[Id] [int] IDENTITY(1,1) NOT NULL,
-	[TemplateId] [int] NULL,
-	[QueryId] [int] NULL,
-	[TypeId] [int] NULL,
-	[ScheduleId] [int] NULL,
-	[IsDeleted] [bit] NOT NULL,
-	[CreatedBy] [int] NULL,
-	[CreatedDate] [datetime] NULL,
-	[UpdatedBy] [int] NULL,
-	[UpdatedDate] [datetime] NULL,
- CONSTRAINT [PK_TemplateQuery] PRIMARY KEY CLUSTERED 
-(
-	[Id] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-) ON [PRIMARY]
-GO
-/****** Object:  Table [dbo].[Templates]    Script Date: 30.07.2019 23:50:54 ******/
+/****** Object:  Table [dbo].[Templates]    Script Date: 1.08.2019 00:06:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -131,7 +110,7 @@ CREATE TABLE [dbo].[Templates](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[Types]    Script Date: 30.07.2019 23:50:54 ******/
+/****** Object:  Table [dbo].[Types]    Script Date: 1.08.2019 00:06:20 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON

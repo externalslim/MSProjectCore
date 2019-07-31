@@ -1,15 +1,11 @@
 ﻿using AutoMapper;
 using MS.Data.Models;
 using MS.Helper.Dtos.Instants;
+using MS.Helper.Dtos.Jobs;
 using MS.Helper.Dtos.LogStashes;
 using MS.Helper.Dtos.Queries;
-using MS.Helper.Dtos.Schedules;
-using MS.Helper.Dtos.TemplateQueries;
 using MS.Helper.Dtos.Templates;
 using MS.Helper.Dtos.Types;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace MS.Helper.Mapping
 {
@@ -29,13 +25,9 @@ namespace MS.Helper.Mapping
             CreateMap<QueriesInput, Queries>();
             CreateMap<QueriesDto, Queries>();
 
-            CreateMap<Schedules, SchedulesDto>();
-            CreateMap<SchedulesInput, Schedules>();
-            CreateMap<SchedulesDto, Schedules>();
-
-            CreateMap<TemplateQueries, TemplateQueriesDto>();
-            CreateMap<TemplateQueriesInput, TemplateQueries>();
-            CreateMap<TemplateQueriesDto, TemplateQueries>();
+            CreateMap<Jobs, JobsDto>();
+            CreateMap<JobsInput, Jobs>();
+            CreateMap<JobsDto, Jobs>();
 
             CreateMap<Templates, TemplatesDto>();
             CreateMap<TemplatesInput, Templates>();

@@ -20,3 +20,14 @@ D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2
 D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.AssemblyInfo.cs
 D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.dll
 D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.pdb
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.deps.json
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.json
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.runtimeconfig.dev.json
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.dll
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\bin\Debug\netcoreapp2.2\MS.Data.pdb
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.csprojAssemblyReference.cache
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.csproj.CoreCompileInputs.cache
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.AssemblyInfoInputs.cache
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.AssemblyInfo.cs
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.dll
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.Data\obj\Debug\netcoreapp2.2\MS.Data.pdb

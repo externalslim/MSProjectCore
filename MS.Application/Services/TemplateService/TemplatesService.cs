@@ -101,6 +101,21 @@ namespace MS.Application.Services.TemplateService
             }
             return output;
         }
+
+
+        public TemplatesOutput GetAllTemplatesByTypeId(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            output = _templatesRepository.GetAllTemplatesByTypeId(input);
+            return output;
+        }
+
+        public TemplatesOutput GetAllActiveTemplatesByTypeId(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            output = _templatesRepository.GetAllActiveTemplatesByTypeId(input);
+            return output;
+        }
         #endregion
 
 

@@ -11,6 +11,8 @@ namespace MS.Core.RepositoryBase.Contract
     {
         TemplatesOutput GetAllTemplates();
         TemplatesOutput GetAllActiveTemplates();
+        TemplatesOutput GetAllTemplatesByTypeId(TemplatesInput input);
+        TemplatesOutput GetAllActiveTemplatesByTypeId(TemplatesInput input);
         TemplatesOutput GetTemplateById(TemplatesInput input);
         TemplatesOutput CreateTemplate(TemplatesInput input);
         TemplatesOutput UpdateTemplate(TemplatesInput input);

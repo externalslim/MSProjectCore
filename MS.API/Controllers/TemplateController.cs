@@ -12,11 +12,11 @@ namespace MS.API.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class MailTemplateController : ControllerBase
+    public class TemplateController : ControllerBase
     {
         private ITemplatesService _templatesService;
 
-        public MailTemplateController(ITemplatesService templatesService)
+        public TemplateController(ITemplatesService templatesService)
         {
             _templatesService = templatesService;
         }
@@ -65,6 +65,22 @@ namespace MS.API.Controllers
             return output;
         }
 
+        [HttpPost]
+        public TemplatesOutput GetAllTemplatesByTypeId(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            output = _templatesService.GetAllTemplatesByTypeId(input);
+            return output;
+        }
+
+        [HttpPost]
+        public TemplatesOutput GetAllActiveTemplatesByTypeId(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            output = _templatesService.GetAllActiveTemplatesByTypeId(input);
+            return output;
+        }
+
 
         [HttpPost]
         public TemplatesOutput GetTemplateWithTypeByTemplateId(TemplatesInput input)
@@ -73,8 +89,27 @@ namespace MS.API.Controllers
             output = _templatesService.GetTemplateWithTypeByTemplateId(input);
             return output;
         }
-        //TemplatesOutput CreateTemplate(TemplatesInput input);
-        //TemplatesOutput UpdateTemplate(TemplatesInput input);
-        //bool DeleteTemplate(TemplatesInput input);
+
+        [HttpPost]
+        public TemplatesOutput CreateTemplate(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            output = _templatesService.CreateTemplate(input);
+            return output;
+        }
+
+        [HttpPost]
+        public TemplatesOutput UpdateTemplate(TemplatesInput input)
+        {
+            var output = new TemplatesOutput();
+            output = _templatesService.UpdateTemplate(input);
+            return output;
+        }
+
+        [HttpPost]
+        public bool DeleteTemplate(TemplatesInput input)
+        {
+            return _templatesService.DeleteTemplate(input);
+        }
     }
 }

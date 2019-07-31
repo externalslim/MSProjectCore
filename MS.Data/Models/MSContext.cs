@@ -16,10 +16,9 @@ namespace MS.Data.Models
         }
 
         public virtual DbSet<Instants> Instants { get; set; }
+        public virtual DbSet<Jobs> Jobs { get; set; }
         public virtual DbSet<LogStashes> LogStashes { get; set; }
         public virtual DbSet<Queries> Queries { get; set; }
-        public virtual DbSet<Schedules> Schedules { get; set; }
-        public virtual DbSet<TemplateQueries> TemplateQueries { get; set; }
         public virtual DbSet<Templates> Templates { get; set; }
         public virtual DbSet<Types> Types { get; set; }
 
@@ -27,7 +26,8 @@ namespace MS.Data.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");  //DESKTOP-QN2M7CR\\SQLEXPRESS
+                //optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-QN2M7CR\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");
             }
         }
 
@@ -38,6 +38,17 @@ namespace MS.Data.Models
             modelBuilder.Entity<Instants>(entity =>
             {
                 entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+            });
+
+            modelBuilder.Entity<Jobs>(entity =>
+            {
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.EndDate).HasColumnType("datetime");
+
+                entity.Property(e => e.StartDate).HasColumnType("datetime");
 
                 entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
             });
@@ -56,28 +67,6 @@ namespace MS.Data.Models
                 entity.Property(e => e.Description).HasMaxLength(250);
 
                 entity.Property(e => e.Name).HasMaxLength(50);
-
-                entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
-            });
-
-            modelBuilder.Entity<Schedules>(entity =>
-            {
-                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Description).HasMaxLength(250);
-
-                entity.Property(e => e.EndDate).HasColumnType("datetime");
-
-                entity.Property(e => e.Name).HasMaxLength(50);
-
-                entity.Property(e => e.StartDate).HasColumnType("datetime");
-
-                entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
-            });
-
-            modelBuilder.Entity<TemplateQueries>(entity =>
-            {
-                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
 
                 entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
             });
