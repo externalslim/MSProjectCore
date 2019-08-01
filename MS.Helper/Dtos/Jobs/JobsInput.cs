@@ -7,6 +7,8 @@ namespace MS.Helper.Dtos.Jobs
 {
     public class JobsInput : BaseInput
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
         public int? TemplateId { get; set; }
         public int? QueryId { get; set; }
         public int? TypeId { get; set; }
