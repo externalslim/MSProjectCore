@@ -95,6 +95,8 @@ namespace MS.Core.RepositoryBase.Base
         public InstantsOutput CreateInstant(InstantsInput input)
         {
             var output = new InstantsOutput();
+            output.InstantsModel = new InstantsDto();
+
             if (input.TemplateId == null)
             {
                 var template = _templatesRepository.CreateTemplate(_mapper.Map<TemplatesInput>(input.TemplatesModel));

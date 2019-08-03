@@ -83,8 +83,8 @@ namespace MS.Application.Services.InstantService
         {
             var output = new InstantsOutput();
 
-            var instants = _instantsRepository.GetAllInstants();
-            if (instants.InstantsListModel.Count > 0)
+            output = _instantsRepository.GetAllInstants();
+            if (output.InstantsListModel.Count > 0)
             {
                 output = Navigator(output);
             }
@@ -127,7 +127,6 @@ namespace MS.Application.Services.InstantService
         private InstantsOutput Navigator(InstantsOutput input)
         {
             var output = input;
-
             if (output.InstantsListModel != null && output.InstantsListModel.Count > 0)
             {
                 //templates
@@ -180,6 +179,7 @@ namespace MS.Application.Services.InstantService
             {
                 //template
                 var templateInput = new TemplatesInput();
+                output.InstantsModel = new InstantsDto();
                 var templateId = output.InstantsModel.TemplateId;
                 templateInput.Id = templateId.Value;
                 var template = _templatesRepository.GetTemplateById(templateInput);

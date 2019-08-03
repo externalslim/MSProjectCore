@@ -25,6 +25,7 @@ namespace MS.Helper.Mapping
             CreateMap<QueriesInput, Queries>();
             CreateMap<QueriesDto, Queries>();
             CreateMap<QueriesOutput, QueriesDto>();
+            CreateMap<QueriesDto, QueriesInput>();
 
             CreateMap<Jobs, JobsDto>();
             CreateMap<JobsInput, Jobs>();
@@ -34,6 +35,7 @@ namespace MS.Helper.Mapping
             CreateMap<TemplatesInput, Templates>();
             CreateMap<TemplatesDto, Templates>();
             CreateMap<TemplatesOutput, TemplatesDto>();
+            CreateMap<TemplatesDto, TemplatesInput>();
 
             CreateMap<Types, TypesDto>();
             CreateMap<TypesInput, Types>();

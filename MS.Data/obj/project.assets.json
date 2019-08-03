@@ -3672,23 +3672,23 @@
     ]
   },
   "packageFolders": {
-    "D:\\Users\\uagirbas\\.nuget\\packages\\": {},
+    "C:\\Users\\cihan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
+      "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
       "projectName": "MS.Data",
-      "projectPath": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
-      "packagesPath": "D:\\Users\\uagirbas\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Data\\obj\\",
+      "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj",
+      "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "D:\\Users\\uagirbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3725,7 +3725,7 @@
             "version": "[1.1.6, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.2.6, )"

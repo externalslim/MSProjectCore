@@ -95,8 +95,8 @@ namespace MS.Application.Services.JobService
         {
             var output = new JobsOutput();
 
-            var jobs = _jobsRepository.GetAllActiveJobs();
-            if (jobs.JobsListModel.Count > 0)
+            output = _jobsRepository.GetAllActiveJobs();
+            if (output.JobsListModel.Count > 0)
             {
                 output = Navigator(output);
             }
@@ -212,7 +212,6 @@ namespace MS.Application.Services.JobService
         private JobsOutput Navigator(JobsOutput input)
         {
             var output = input;
-
             if (output.JobsListModel != null && output.JobsListModel.Count > 0)
             {
                 //templates
@@ -265,6 +264,7 @@ namespace MS.Application.Services.JobService
             {
                 //template
                 var templateInput = new TemplatesInput();
+                output.JobsModel = new JobsDto();
                 var templateId = output.JobsModel.TemplateId;
                 templateInput.Id = templateId.Value;
                 var template = _templatesRepository.GetTemplateById(templateInput);
