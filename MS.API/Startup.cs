@@ -31,6 +31,10 @@ namespace MS.API
 
             var mapper = autoMapperConfig.CreateMapper();
             services.AddSingleton(mapper);
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("CoreSwagger", new Info
@@ -58,11 +62,13 @@ namespace MS.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(options => options.AllowAnyOrigin());
+
             app.UseSwagger()
             .UseSwaggerUI(c =>
             {
                 //TODO: Either use the SwaggerGen generated Swagger contract (generated from C# classes)
-                c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "Swagger Test .Net Core");
+                c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "MSServer .Net Core");
 
                 //TODO: Or alternatively use the original Swagger contract that's included in the static files
                 // c.SwaggerEndpoint("/swagger-original.json", "Swagger Petstore Original");

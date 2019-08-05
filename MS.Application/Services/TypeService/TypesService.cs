@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using MS.Application.DependencyManager;
 using MS.Core.RepositoryBase.Contract;
 using MS.Core.UoW;
 using MS.Helper.Dtos.Types;
@@ -22,7 +23,6 @@ namespace MS.Application.Services.TypeService
             return output;
         }
 
-        //[UnitOfWork]
         public TypesOutput GetAllTypes()
         {
             var output = new TypesOutput();
