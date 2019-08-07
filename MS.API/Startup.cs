@@ -31,10 +31,8 @@ namespace MS.API
 
             var mapper = autoMapperConfig.CreateMapper();
             services.AddSingleton(mapper);
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
-            });
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("CoreSwagger", new Info
@@ -52,6 +50,8 @@ namespace MS.API
                 });
             });
             var container = new ServiceResolver(services).GetServiceProvider();
+            services.AddCors();
+
             return container;
         }
 
@@ -62,7 +62,10 @@ namespace MS.API
             {
                 app.UseDeveloperExceptionPage();
             }
-            app.UseCors(options => options.AllowAnyOrigin());
+
+            app.UseCors(builder =>
+            builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
+            ) ;
 
             app.UseSwagger()
             .UseSwaggerUI(c =>

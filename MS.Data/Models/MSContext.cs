@@ -16,6 +16,7 @@ namespace MS.Data.Models
         }
 
         public virtual DbSet<Instants> Instants { get; set; }
+        public virtual DbSet<JobHistory> JobHistory { get; set; }
         public virtual DbSet<Jobs> Jobs { get; set; }
         public virtual DbSet<LogStashes> LogStashes { get; set; }
         public virtual DbSet<Queries> Queries { get; set; }
@@ -27,9 +28,8 @@ namespace MS.Data.Models
             if (!optionsBuilder.IsConfigured)
             {
                 //optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");
-                //optionsBuilder.UseSqlServer("Server=DESKTOP-QN2M7CR\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");
-                optionsBuilder.UseSqlServer("Server=10.254.46.189,1433;Database=MS;User ID=sa;Password=123qwe!!;");
-
+                //optionsBuilder.UseSqlServer("Server=10.254.46.189,1433;Database=MS;User ID=sa;Password=123qwe!!;");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-QN2M7CR\\SQLEXPRESS;Database=MS;Trusted_Connection=True;");
             }
         }
 
@@ -48,7 +48,11 @@ namespace MS.Data.Models
             {
                 entity.Property(e => e.CreatedDate).HasColumnType("datetime");
 
+                entity.Property(e => e.Description).HasMaxLength(250);
+
                 entity.Property(e => e.EndDate).HasColumnType("datetime");
+
+                entity.Property(e => e.Name).HasMaxLength(50);
 
                 entity.Property(e => e.StartDate).HasColumnType("datetime");
 

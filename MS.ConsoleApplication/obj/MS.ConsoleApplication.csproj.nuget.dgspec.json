@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj",
+        "projectName": "MS.ConsoleApplication",
+        "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj",
+        "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[1.60.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

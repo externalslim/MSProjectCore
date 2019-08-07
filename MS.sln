@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.Application", "MS.Applic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.API", "MS.API\MS.API.csproj", "{8177B806-07AC-4EA2-ADE0-688F38044648}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.Helper", "MS.Helper\MS.Helper.csproj", "{EEF100DB-48FF-4604-896B-A3E6B2EB17E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MS.Helper", "MS.Helper\MS.Helper.csproj", "{EEF100DB-48FF-4604-896B-A3E6B2EB17E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MS.ConsoleJob", "MS.ConsoleJob", "{3C345D03-C482-4B4F-84C4-A3A92EDCAC98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MS.ConsoleApplication", "MS.ConsoleApplication\MS.ConsoleApplication.csproj", "{DA319DA1-F5C3-47C7-A80D-268F808D25F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +43,16 @@ Global
 		{EEF100DB-48FF-4604-896B-A3E6B2EB17E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEF100DB-48FF-4604-896B-A3E6B2EB17E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEF100DB-48FF-4604-896B-A3E6B2EB17E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA319DA1-F5C3-47C7-A80D-268F808D25F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA319DA1-F5C3-47C7-A80D-268F808D25F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA319DA1-F5C3-47C7-A80D-268F808D25F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA319DA1-F5C3-47C7-A80D-268F808D25F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA319DA1-F5C3-47C7-A80D-268F808D25F6} = {3C345D03-C482-4B4F-84C4-A3A92EDCAC98}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C274735E-9B2A-485E-AE0D-1827BFCEE66C}

@@ -1,0 +1,11 @@
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.deps.json
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.runtimeconfig.json
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.runtimeconfig.dev.json
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.dll
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.pdb
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.AssemblyInfoInputs.cache
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.AssemblyInfo.cs
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.dll
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.pdb
+C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.csprojAssemblyReference.cache

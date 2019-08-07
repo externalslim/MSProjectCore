@@ -2815,11 +2815,12 @@
       ]
     },
     "System.Reflection.Emit/4.3.0": {
-      "sha512": "yG590nYuwYBbrl04imSDL4QloIpJN/N4zk4g2C7TaZv+ApEB5Xco1hmckwaQdtb8btYQGdHgf095AhgQsmDDJg==",
+      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
       "type": "package",
       "path": "system.reflection.emit/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2850,11 +2851,12 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "SUgI1DKSCYn6vyCF6S3zFSCBJ6/8EGGeYqfCxLI4GdRWPJn5yuzwqvznH2Fp8wjxTXiKAwx6ilDWeJxOPVR6+w==",
+      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -3694,23 +3696,23 @@
     ]
   },
   "packageFolders": {
-    "D:\\Users\\uagirbas\\.nuget\\packages\\": {},
+    "C:\\Users\\cihan\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
+      "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
       "projectName": "MS.Helper",
-      "projectPath": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
-      "packagesPath": "D:\\Users\\uagirbas\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\obj\\",
+      "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\MS.Helper.csproj",
+      "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Helper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "D:\\Users\\uagirbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3723,8 +3725,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {
-              "projectPath": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj"
+            "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj": {
+              "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.Data\\MS.Data.csproj"
             }
           }
         }
