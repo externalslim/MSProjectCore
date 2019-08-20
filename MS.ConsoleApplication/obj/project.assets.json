@@ -1293,12 +1293,11 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
+      "sha512": "SUgI1DKSCYn6vyCF6S3zFSCBJ6/8EGGeYqfCxLI4GdRWPJn5yuzwqvznH2Fp8wjxTXiKAwx6ilDWeJxOPVR6+w==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1338,12 +1337,11 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
+      "sha512": "bZ37Q9M+3BlyQIQiwIJ0oyvYsyfrcHLKMVW8wVQm5Q7OS5lAcmoXiMTZIdFCJ4cZZQEUG0PP/CFlixAyrDyChw==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -1863,23 +1861,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cihan\\.nuget\\packages\\": {},
+    "D:\\Users\\uagirbas\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj",
+      "projectUniqueName": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj",
       "projectName": "MS.ConsoleApplication",
-      "projectPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj",
-      "packagesPath": "C:\\Users\\cihan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cihan\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\obj\\",
+      "projectPath": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\MS.ConsoleApplication.csproj",
+      "packagesPath": "D:\\Users\\uagirbas\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\uagirbas\\Documents\\GitHub\\MSProjectCore\\MS.ConsoleApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\cihan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Users\\uagirbas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

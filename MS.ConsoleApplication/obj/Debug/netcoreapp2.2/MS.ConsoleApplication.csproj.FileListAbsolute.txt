@@ -9,3 +9,14 @@ C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\ne
 C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.dll
 C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.pdb
 C:\Users\cihan\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.csprojAssemblyReference.cache
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.deps.json
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.runtimeconfig.json
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.runtimeconfig.dev.json
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.dll
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\bin\Debug\netcoreapp2.2\MS.ConsoleApplication.pdb
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.csprojAssemblyReference.cache
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.csproj.CoreCompileInputs.cache
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.AssemblyInfoInputs.cache
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.AssemblyInfo.cs
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.dll
+D:\Users\uagirbas\Documents\GitHub\MSProjectCore\MS.ConsoleApplication\obj\Debug\netcoreapp2.2\MS.ConsoleApplication.pdb
