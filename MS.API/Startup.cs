@@ -1,12 +1,15 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using MS.Application.DependencyResolver;
 using MS.Helper.Mapping;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
+using System.Text;
 
 namespace MS.API
 {
@@ -22,8 +25,26 @@ namespace MS.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            /*JWT Authentication*/
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(jwtBearerOptions =>
+                {
+                    jwtBearerOptions.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidateActor = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = Configuration["Issuer"],
+                        ValidAudience = Configuration["Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SigningKey"]))
+                    };
+                });
+            /*JWT Authentication*/
+
             services.AddMvc();
 
+            /*Automapper*/
             var autoMapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new MapperProfile());
@@ -31,8 +52,9 @@ namespace MS.API
 
             var mapper = autoMapperConfig.CreateMapper();
             services.AddSingleton(mapper);
+            /*Automapper*/
 
-
+            /*SwaggerGen*/
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("CoreSwagger", new Info
@@ -49,8 +71,15 @@ namespace MS.API
                     TermsOfService = "http://swagger.io/terms/"
                 });
             });
+            /*SwaggerGen*/
+
+            /*IOC Resolver*/
             var container = new ServiceResolver(services).GetServiceProvider();
+            /*IOC Resolver*/
+
+            /*CORS*/
             services.AddCors();
+            /*CORS*/
 
             return container;
         }
@@ -63,19 +92,25 @@ namespace MS.API
                 app.UseDeveloperExceptionPage();
             }
 
+            /*CORS Settings*/
             app.UseCors(builder =>
             builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
-            ) ;
+            );
+            /*CORS Settings*/
 
+            /*Swagger Options*/
             app.UseSwagger()
             .UseSwaggerUI(c =>
             {
-                //TODO: Either use the SwaggerGen generated Swagger contract (generated from C# classes)
                 c.SwaggerEndpoint("/swagger/CoreSwagger/swagger.json", "MSServer .Net Core");
-
-                //TODO: Or alternatively use the original Swagger contract that's included in the static files
-                // c.SwaggerEndpoint("/swagger-original.json", "Swagger Petstore Original");
             });
+            /*Swagger Options*/
+
+            /*Set Authentication*/
+            app.UseAuthentication();
+            /*Set Authentication*/
+
+
             app.UseMvc();
         }
     }

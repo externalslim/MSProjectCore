@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MS.Application.DependencyResolver;
 using MS.Application.Services.TypeService;
-using MS.Core.UoW;
-using MS.Data.Models;
-using MS.Helper.Dtos.Instants;
 using MS.Helper.Dtos.Types;
 
 namespace MS.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
