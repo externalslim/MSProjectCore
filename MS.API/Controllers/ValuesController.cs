@@ -5,7 +5,7 @@ using MS.Helper.Dtos.Types;
 
 namespace MS.API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
@@ -22,7 +22,10 @@ namespace MS.API.Controllers
         [HttpGet]
         public ActionResult<TypesOutput> Get()
         {
+            var instance = Helper.Configuration.ConfigurationProvider.Instance;
+
             var types = _typesService.GetAllTypes();
+
             //return Newtonsoft.Json.JsonConvert.DeserializeObject(types);
             return types;
         }

@@ -25,6 +25,11 @@ namespace MS.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+
+            Helper.Configuration.ConfigurationProvider.Instance.Load();
+            var instance = Helper.Configuration.ConfigurationProvider.Instance;
+            
+
             /*JWT Authentication*/
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(jwtBearerOptions =>
@@ -35,9 +40,9 @@ namespace MS.API
                         ValidateAudience = true,
                         ValidateLifetime = true,
                         ValidateIssuerSigningKey = true,
-                        ValidIssuer = Configuration["Issuer"],
-                        ValidAudience = Configuration["Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SigningKey"]))
+                        ValidIssuer = instance.JsonWebToken.Issuer,
+                        ValidAudience = instance.JsonWebToken.Audience,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(instance.JsonWebToken.SigningKey))
                     };
                 });
             /*JWT Authentication*/
