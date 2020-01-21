@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using MS.Application.Services.TypeService;
+using MS.Data.Redis;
 using MS.Helper.Dtos.Types;
 
 namespace MS.API.Controllers
@@ -22,8 +23,8 @@ namespace MS.API.Controllers
         [HttpGet]
         public ActionResult<TypesOutput> Get()
         {
-            var instance = Helper.Configuration.ConfigurationProvider.Instance;
-
+            //var instance = Helper.Configuration.ConfigurationProvider.Instance;
+            var connection = RedisStack.Connection;
             var types = _typesService.GetAllTypes();
 
             //return Newtonsoft.Json.JsonConvert.DeserializeObject(types);

@@ -1,0 +1,14 @@
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\bin\Debug\netcoreapp2.2\MS.Core.deps.json
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\bin\Debug\netcoreapp2.2\MS.Core.dll
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\bin\Debug\netcoreapp2.2\MS.Core.pdb
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\bin\Debug\netcoreapp2.2\MS.Data.dll
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\bin\Debug\netcoreapp2.2\MS.Helper.dll
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\bin\Debug\netcoreapp2.2\MS.Data.pdb
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\bin\Debug\netcoreapp2.2\MS.Helper.pdb
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\obj\Debug\netcoreapp2.2\MS.Core.csprojAssemblyReference.cache
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\obj\Debug\netcoreapp2.2\MS.Core.csproj.CoreCompileInputs.cache
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\obj\Debug\netcoreapp2.2\MS.Core.AssemblyInfoInputs.cache
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\obj\Debug\netcoreapp2.2\MS.Core.AssemblyInfo.cs
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\obj\Debug\netcoreapp2.2\MS.Core.csproj.CopyComplete
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\obj\Debug\netcoreapp2.2\MS.Core.dll
+D:\Users\uagirbas\Documents\MSProjectCore\MS.Core\obj\Debug\netcoreapp2.2\MS.Core.pdb
